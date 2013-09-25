@@ -1,0 +1,140 @@
+.recordingMoreOriginTr-xb {
+	border-width: 1px 1px 0px 1px;
+}
+
+.recordingMoreTr-xb {
+	border-top-style: dashed;
+}
+
+.productName-xb {
+	width: 105px;
+}
+
+/*价格显示、汇总、提交的样式，中间部分*/
+
+
+
+#totalID {
+	position: relative;
+	/*display: inline-block;*/
+	width: 50%;
+}
+
+#totalTagID {
+	padding: 16px;
+	line-height: 32px; 
+	/*display: inline-block;*/
+}
+
+#totalMoneyID {
+	padding: 16px 16px 16px 0px;
+	line-height: 32px; 
+	/*display: inline-block;*/
+	font-size: 27px;
+	font-style: italic;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+}
+
+#submitRecordingID {
+	width: 15%;
+}
+
+#clearRecordingID {
+	background-color: #bfc6ca;
+}
+
+#clearRecordingID span {
+	display: block;
+	background-image: url('../thirdParty/glyphish-icons/img/100-coffee.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 24px;
+	width: 20px;
+}
+
+/*下半部分的样式，包括产品按钮，数字按钮*/
+
+/*数字按钮*/
+#numKeyTblID td {
+	border: 1px solid #d8d9dd;
+	height: 40px;
+	padding: 16px;
+	text-align: center;
+}
+
+#numKeyID {
+	width: 40%;
+	/*display: inline-block;
+	float: right;*/
+	text-align: center;
+}
+
+#numKeyID td {
+	width: 33.33%;
+}
+
+#numKeyOKID {
+	background-color: #8e44ad;
+	color: white;
+}
+
+/*产品按钮*/
+#productKeyID {
+	position: relative;
+	-webkit-box-flex: 1;
+	/*width: 56%;
+	display: inline-block;*/
+	margin: 0px 8px 0px 0px;
+	z-index: 99;
+}
+
+#productKeyID ul {
+	font-weight: normal;
+	width: 100%;
+	color: #595d60;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#productKeyID li {
+	display: table;
+	float: left;
+	background-color: #ecf0f1;
+	width: 33.33%;
+	height: 73px;
+	position: relative;
+}
+
+.key-xb {
+	display: table-cell;
+	padding: 16px;
+	border: 0px solid #d8d9dd;
+	border-width: 0px 1px 1px 0px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#productMoreID {
+	background-color: #1abc9c;
+	color: white;
+}
+
+.mask-xb {
+	background-color: transparent;
+	display: none;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 98;
+	opacity: 1;
+}
+
+.closeProduct-xb {
+	
+}

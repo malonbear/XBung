@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/product.css" />
+        <!-- <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  -->
+        <script src="thirdParty/jQuery/jquery-2.0.2.js"></script>
+        <script type="text/javascript" src="js/dabase.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/product.js"></script>
+        <!-- <script src="http://192.168.1.103:8080/target/target-script-min.js#anonymous"></script>  -->
+        <title>Product</title>
+    </head>
+    <body>
+    	<div class="page-xb">
+    		<div class="header-xb">
+    			<div class="menu-xb"></div>
+    			<div class="headerText-xb">
+    				基本信息
+    			</div>
+    		</div>
+    		<div class="content-xb">
+    			<div class="row-xb">
+    				<div class="container-xb">
+    					<a id="addProductID" class="btn-xb btn-mid-xb bgClr-turquoise-xb"><span class="icon-13-w-xb icon-add-13-xb"></span> 增加</a>
+    					<div class="blank-xb"></div>
+    					<ul class="btnGrp-xb navbar-xb">
+    						<li><a href="#" class="btn-xb btn-mid-xb">产品</a></li>
+    						<li><a href="#" class="btn-xb btn-mid-xb">联系人</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="row-xb">
+    				<table id="productTblID">
+    					<thead>
+    						<tr>
+    							<th>产品</th>
+    							<th>成本</th>
+    							<th>描述</th>
+    							<th></th>
+    							<th></th>
+    						</tr>
+    					</thead>
+    					<tbody>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    						<tr>
+    							<td class="productName-xb"></td>
+    							<td class="productCost-xb"></td>
+    							<td class="productDescription-xb"></td>
+    							<td class="tbEdit-xb"></td>
+    							<td class="tbMore-xb"></td>
+    						</tr>
+    					</tbody>
+    				</table>
+    			</div>
+    			<div class="row-xb">
+    				<div class="pagination-xb" id="productTblPageBtnGrpID">
+    					<div class="nextPrev-xb">
+    						<a class="btn-xb btn-mid-xb previous-xb bgClr-turquoise-xb"><span class="icon-previous-xb"></span></a>
+    						<a class="btn-xb btn-mid-xb next-xb bgClr-turquoise-xb"><span class="icon-next-xb"></span></a>
+    					</div>
+    					<div class="blank-xb"></div>
+						<div class="pageDetail-xb bgClr-wisteri-xb">
+							<a class="btn-xb btn-mid-xb pageStart-xb">最前</a>
+							<div class="showPage-xb btn-xb btn-mid-xb">1/5</div>
+							<a class="btn-xb btn-mid-xb pageEnd-xb">最后</a>
+						</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div id="productInDBTblRevl" class="reveal-xb">
+    		<div class="row-xb">
+    			<table id="productInDBTbl" class="inputTbl-xb">
+    				<thead>
+    					<tr>
+    						<th></th>
+    						<th>产品</th>
+    						<th>成本</th>
+    						<th>描述</th>
+    						<th></th>
+    					</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    					<tr>
+							<td class="tbStat-xb"></td>
+    						<td class="productName-xb"><input type="text"/></td>
+							<td class="productCost-xb"><input type="text"/></td>
+    						<td class="productDescription-xb"><input type="text"/></td>
+    						<td class="tbMore-xb"></td>
+						</tr>
+    				</tbody>
+    			</table>
+    		</div>
+    		<div class="row-xb">
+    			<div class="container-xb">
+    				<a id="clearProductID" class="btn-xb btn-big-xb"><span></span></a>
+    				<div class="blank-xb bgClr-clouds-xb"></div>
+    				<a id="submitProductID" class="btn-xb btn-big-xb bgClr-peterRiver-xb">提交</a>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>

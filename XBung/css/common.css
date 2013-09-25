@@ -1,0 +1,464 @@
+body {
+	background-color: #d8d9dd;
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+	font-family: '微软雅黑', 'Lucida sans', Arial;
+	font-size: 20px;
+	color: #595d60;
+}
+
+div, a, span {
+	font-size: 20px;
+}
+
+/*头部，显示menu的地方*/
+
+.header-xb {
+	background-color: #595d60;
+	padding:16px;
+}
+
+.headerText-xb {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	left :0px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.menu-xb {
+	display: inline-block;
+	background-image: url('../thirdParty/jQueryMobile/img/icons-36-black.png');
+	background-position: -1584px -6px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 24px;
+	width: 18px;
+}
+
+/*menu*/
+.menuRow-xb {
+	background-color: #bdc3c7;
+	border-bottom: 1px solid #d8d9dd;
+}
+
+.mainTag-xb {
+	background-color: #f39c12;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	/*font-size: 14px;*/
+}
+
+.mainTag-xb a {
+	width: 90px;
+	padding: 16px;
+	text-align: center;
+	display: inline-block;
+	/*font-size: 14px;*/
+}
+
+.detailTag-xb {
+	/*background-color: #f39c12;*/
+	/*width: 60px;*/
+	font-weight: bold;
+	color: #595d60;
+	text-align: center;
+	display: inline-block;
+	/*font-size: 14px;*/
+}
+
+.detailTag-xb a {
+	padding: 16px;
+	display: inline-block;
+	/*font-size: 14px;*/
+}
+
+/*行*/
+
+.row-xb {
+	margin: 8px 10px 8px 10px;
+}
+
+/*表格*/
+
+table {
+	border-collapse: collapse;
+	background-color: #ecf0f1;
+	font-weight: normal;
+	width: 100%;
+}
+
+th {
+	padding: 16px;
+	text-align: left;
+	background-color: #bfc6ca;
+}
+
+td {
+	padding: 6px 16px 6px 16px;
+	text-align: left;
+	height: 40px;
+}
+
+tr {
+	border: 1px solid #d8d9dd;
+}
+
+/*可输入数据的表格*/
+table.inputTbl-xb td {
+	padding: 0px 16px 0px 16px;
+	height: 52px;
+}
+
+table.inputTbl-xb input {
+	height: 51px;
+	background-color: inherit;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*包裹类*/
+.container-xb {
+	display: -webkit-box;
+	display: -moz-box;
+	font-size: 0px;
+	/*background-color: #ecf0f1;*/
+}
+
+/*无效类*/
+.tr-Off-xb {
+	color: #d7dddd;
+}
+
+/*无效图标*/
+.tr-Off-xb .icon-more-open-xb {
+	background-color: #d7dddd;
+}
+
+.tr-Off-xb .icon-more-close-xb {
+	background-color: #f1c40f;
+}
+
+/*拉伸空白*/
+.blank-xb {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+}
+
+/*可编辑*/
+.focused-xb {
+	background-color: #3498db;
+}
+
+/*按钮*/
+.btn-xb {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+	color: white;
+}
+
+.btn-big-xb {
+	padding: 20px 16px 20px 16px;
+	line-height: 24px;
+	font-size: 20px;
+}
+
+.btn-mid-xb {
+	padding: 10px 16px 9px;
+	/*line-height: 24px;*/
+	font-size: 14px;
+}
+
+/*按钮组*/
+.btnGrp-xb {
+	display: inline-block;
+	font-size: 0px;
+	white-space: nowrap;
+	margin: 0px;
+	padding: 0px;
+}
+
+.btnGrp-xb li {
+	display: inline-block;
+}
+
+/*导航栏*/
+.navbar-xb li:last-child .btn-xb {
+	border-width: 0px;
+}
+
+.navbar-xb .btn-xb {
+	background-color: #f39c12;
+	border: solid 0px #f1c40f;
+	border-right-width: 1px;
+	font-weight: bold;
+}
+
+/*颜色*/
+.bgClr-clouds-xb {
+	background-color: #ecf0f1;
+}
+
+.bgClr-peterRiver-xb {
+	background-color: #3498db;
+}
+
+.bgClr-carrot-xb {
+	background-color: #e67e22;
+}
+
+.bgClr-gray-xb {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.bgClr-wisteri-xb {
+	background-color: #8e44ad;
+}
+
+.bgClr-turquoise-xb {
+	background-color: #1abc9c;
+}
+/*表格图标*/
+.tbStat-xb {
+	width: 20px;
+}
+
+.tbMore-xb {
+	width: 18px;
+}
+
+.tbEdit-xb {
+	width: 18px;
+}
+
+/*公共图标*/
+.icon-checkbox-xb {
+	background-image: url('../thirdParty/Flat-UI-master/img/checkbox.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 20px;
+	width: 20px;
+	display: block;
+}
+
+.icon-checkbox-on-xb {
+	background-position: -60px -30px;
+}
+
+.icon-checkbox-off-xb {
+	background-position: 0px -90px;
+}
+
+.icon-13-w-xb {
+	background-image: url('../thirdParty/jQueryMobile/img/icons-18-white.png');
+	background-repeat: no-repeat;
+	height: 13px;
+	width: 13px;
+	display: inline-block;
+	/*position: relative;*/
+}
+
+.icon-add-13-xb {
+	background-position: -3px -3px;
+}
+
+.icon-18-w-xb {
+	background-image: url('../thirdParty/jQueryMobile/img/icons-18-white.png');
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 18px;
+	display: block;
+}
+
+.icon-more-open-xb {
+	background-position: -180px -1px;
+}
+
+.icon-more-close-xb {
+	background-position: -216px -1px;
+}
+
+.icon-edit-18-xb {
+	background-position: -824px -1px;
+}
+
+.icon-next-xb {
+	background-image: url('../thirdParty/Flat-UI-master/img/next.png');
+	background-repeat: no-repeat;
+	height: 28px;
+	width: 26px;
+	display: block;
+}
+
+.icon-previous-xb {
+	background-image: url('../thirdParty/Flat-UI-master/img/previous.png');
+	background-repeat: no-repeat;
+	height: 28px;
+	width: 26px;
+	display: block;
+}
+
+.icon-recording-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/recording.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-sales-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/sales.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-reserve-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/reserve.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-purchase-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/purchase.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-stat-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/stat.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-general-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/general.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-detailRecords-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/detailRecords.png');
+	background-size: 25px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 25px;
+	display: inline-block;
+}
+
+.icon-inDB-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/inDB.png');
+	background-size: 25px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 25px;
+	display: inline-block;
+}
+
+.icon-product-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/product.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-contact-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/contact.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
+.icon-help-xb {
+	background-image: url('../thirdParty/glyphish-icons/img/help.png');
+	background-size: 14px 30px;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 14px;
+	display: inline-block;
+}
+
+.icon-backspace-xb {
+	background-image: url('../img/backspace.png');
+	background-size: 40px 27px;
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 40px;
+	display: inline-block;
+}
+
+.icon-18-borderR-xb {
+	border-radius: 9px;
+}
+
+/*pagination*/
+.pagination-xb, .nextPrev-xb, .pageDetail-xb {
+	display: -webkit-box;
+}
+
+.previous-xb {
+	margin: 0px 4px 0px 0px;
+}
+    						
+.pageStart-xb, .pageEnd-xb {
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.showPage-xb {
+	line-height: 32px;
+	font-size: 20px;
+	border: 0px solid #9b59b6;
+	border-width: 0px 1px 0px 1px;
+}
+
+/*弹出对话框*/
+.revealBG-xb {
+	background-color: rgba(0, 0, 0, 0.45);
+	/*display: none;*/
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*z-index: 100;*/
+	opacity: 1;
+}
+
+.reveal-xb {
+	background-color: #d8d9dd;
+	display: none;
+	left: 2%;
+	position: absolute;
+	top: 2%;
+	width: 96%;
+	/*z-index: 101;*/
+	border-width: 0px;
+}
